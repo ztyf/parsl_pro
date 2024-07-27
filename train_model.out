@@ -1,0 +1,74 @@
+[0 - 7f9dc070d000]    2.632458 {3}{Mapper}: Enabled Control Replication Optimizations.
+[0 - 7f9dc070d000]    2.632636 {3}{Mapper}: Enabled Control Replication Optimizations.
+[0 - 7f9dc070d000]    2.632691 {3}{Mapper}: Enabled Control Replication Optimizations.
+workSpaceSize (128 MB)
+num_nodes = 1 num_gpus_per_node = 1
+optimal_views.size = 6
+views.size() = 6
+Deserialized Views...
+node[5000011]: type(Softmax_5000011) view(1 1 0)  inEdge(node(5000010) idx(0))
+node[5000010]: type(Dense_5000010) view(1 1 0)  inEdge(node(5000009) idx(0))
+node[5000009]: type(Dense_5000009) view(1 1 0)  inEdge(node(5000008) idx(0))
+node[5000008]: type(Dense_5000008) view(1 1 0)  inEdge(node(5000007) idx(0))
+node[5000006]: type(Input_5000006) view(1 1 0) 
+node[5000007]: type(Repartition_5000007) view(1 1 0)  inEdge(node(5000006) idx(0))
+digraph taskgraph {
+  node0 [label="{ Input_5000006 | { shape([ 784/1 64/1 1/1 ]) } }",shape=record];
+  node1 [label="{ Repartition_5000007 | { dim(1) | deg(1) } }",shape=record];
+  node0 -> node1;
+  node2 [label="{ Dense_5000008 | { 512/1 | 64/1 | 1/1 } }",shape=record];
+  node1 -> node2;
+  node3 [label="{ Dense_5000009 | { 512/1 | 64/1 | 1/1 } }",shape=record];
+  node2 -> node3;
+  node4 [label="{ Dense_5000010 | { 10/1 | 64/1 | 1/1 } }",shape=record];
+  node3 -> node4;
+  node5 [label="{ Softmax_5000011 | { 10/1 | 64/1 | 1/1 } }",shape=record];
+  node4 -> node5;
+}
+opopop: Dense_1000001_2000002_2000008_2000014
+opopop: Dense_1000001_2000002_2000008_2000014
+opopop: Dense_1000002_2000003_2000009_2000017
+opopop: Dense_1000002_2000003_2000009_2000017
+opopop: Dense_1000003_2000004_2000010_2000020
+opopop: Dense_1000003_2000004_2000010_2000020
+ndim(1) dims[1 0 0 0]
+[0 - 7f9dc070d000]   14.070480 {3}{Model}: operator[0]: type(0)
+[0 - 7f9dc070d000]   14.070510 {3}{Model}: 	outputs[0] region(5,1,1)
+[0 - 7f9dc070d000]   14.070515 {3}{Model}: operator[1]: type(96)
+[0 - 7f9dc070d000]   14.070520 {3}{Model}: 	inputs[0] region(5,1,1)
+[0 - 7f9dc070d000]   14.070526 {3}{Model}: 	outputs[0] region(7,2,3)
+[0 - 7f9dc070d000]   14.070530 {3}{Model}: operator[2]: type(1)
+[0 - 7f9dc070d000]   14.070532 {3}{Model}: 	outputs[0] region(11,3,5)
+[0 - 7f9dc070d000]   14.070534 {3}{Model}: operator[3]: type(1)
+[0 - 7f9dc070d000]   14.070536 {3}{Model}: 	outputs[0] region(13,4,7)
+[0 - 7f9dc070d000]   14.070538 {3}{Model}: operator[4]: type(5)
+[0 - 7f9dc070d000]   14.070542 {3}{Model}: 	inputs[0] region(7,2,3)
+[0 - 7f9dc070d000]   14.070546 {3}{Model}: 	outputs[0] region(15,5,9)
+[0 - 7f9dc070d000]   14.070550 {3}{Model}: operator[5]: type(1)
+[0 - 7f9dc070d000]   14.070554 {3}{Model}: 	outputs[0] region(17,6,11)
+[0 - 7f9dc070d000]   14.070558 {3}{Model}: operator[6]: type(1)
+[0 - 7f9dc070d000]   14.070562 {3}{Model}: 	outputs[0] region(19,7,13)
+[0 - 7f9dc070d000]   14.070566 {3}{Model}: operator[7]: type(5)
+[0 - 7f9dc070d000]   14.070570 {3}{Model}: 	inputs[0] region(15,5,9)
+[0 - 7f9dc070d000]   14.070574 {3}{Model}: 	outputs[0] region(21,8,15)
+[0 - 7f9dc070d000]   14.070578 {3}{Model}: operator[8]: type(1)
+[0 - 7f9dc070d000]   14.070582 {3}{Model}: 	outputs[0] region(23,9,17)
+[0 - 7f9dc070d000]   14.070586 {3}{Model}: operator[9]: type(1)
+[0 - 7f9dc070d000]   14.070590 {3}{Model}: 	outputs[0] region(25,10,19)
+[0 - 7f9dc070d000]   14.070594 {3}{Model}: operator[10]: type(5)
+[0 - 7f9dc070d000]   14.070596 {3}{Model}: 	inputs[0] region(21,8,15)
+[0 - 7f9dc070d000]   14.070598 {3}{Model}: 	outputs[0] region(27,11,21)
+[0 - 7f9dc070d000]   14.070600 {3}{Model}: operator[11]: type(19)
+[0 - 7f9dc070d000]   14.070602 {3}{Model}: 	inputs[0] region(27,11,21)
+[0 - 7f9dc070d000]   14.070604 {3}{Model}: 	outputs[0] region(29,12,23)
+Index load entire dataset: ptr input_head_ 0x7f922cc8e010, idx 0, input_ 0x7f922cc8e010 140265793314832 47040000, input 0x7f93b4800000 140272365207552 47040000
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Index load entire dataset: ptr input_head_ 0x7f937cee1990, idx 0, input_ 0x7f937cee1990 140271432898960 60000, input 0x7f93bfb71800 140272553367552 60000
+5 0 4 1 9 2 1 3 1 4 3 5 3 6 1 7 2 8 6 9 4 0 9 1 1 2 4 3 2 7 3 8 
+mnist mlp
+Python API batchSize(64) workersPerNodes(1) numNodes(1)
+Compiled ffmodel!
+numpy array: (140265793314832, False), <cdata 'float *' 0x7f922cc8e010>, 0x7f922cc8e010
+numpy array: (140271432898960, False), <cdata 'float *' 0x7f937cee1990>, 0x7f937cee1990
+epochs 1, ELAPSED TIME = 4.5965s, THROUGHPUT = 13053.28 samples/s
+

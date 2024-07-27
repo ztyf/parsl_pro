@@ -1,0 +1,7 @@
+--> executable follows <--
+
+    cd $FF_HOME/parsl_pro
+    legate preprocess_data.py --output_file mnist_preprocessed.npz
+    
+--> end executable <--
+Using flexflow backend.

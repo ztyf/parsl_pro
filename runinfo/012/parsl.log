@@ -1,0 +1,117 @@
+1722080067.889143 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:98 __init__ INFO: Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    dependency_resolver=None, 
+    executors=(ThreadPoolExecutor(
+        label='threads', 
+        max_threads=2, 
+        storage_access=None, 
+        thread_name_prefix='', 
+        working_dir=None
+    ),), 
+    exit_mode='cleanup', 
+    garbage_collect=True, 
+    initialize_logging=True, 
+    internal_tasks_max_threads=10, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    retries=0, 
+    retry_handler=None, 
+    run_dir='runinfo', 
+    std_autopath=None, 
+    strategy='simple', 
+    strategy_period=5, 
+    usage_tracking=0
+)
+1722080067.889331 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:100 __init__ INFO: Parsl version: 2024.07.22
+1722080067.889442 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.usage_tracking.usage:118 __init__ DEBUG: Tracking level: 0
+1722080067.889537 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:128 __init__ INFO: Run id is: 3d3499f4-419c-4e00-802a-df88113720c5
+1722080067.963390 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:135 __init__ DEBUG: Considering candidate for workflow name: /home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py
+1722080067.963543 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:135 __init__ DEBUG: Considering candidate for workflow name: /home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py
+1722080067.963609 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:135 __init__ DEBUG: Considering candidate for workflow name: /home/ubuntu/data/test/parsl_pro/parsl_script.py
+1722080067.963666 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:141 __init__ DEBUG: Using parsl_script.py as workflow name
+1722080067.963839 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.memoization:163 __init__ INFO: App caching initialized
+1722080067.963929 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.jobs.strategy:145 __init__ DEBUG: Scaling strategy: simple
+1722080067.967222 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1016 submit DEBUG: Task 0 will be sent to executor threads
+1722080067.967338 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:818 _add_output_deps DEBUG: Adding output dependencies
+1722080067.967396 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1067 submit DEBUG: Added output dependencies
+1722080067.967464 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1080 submit DEBUG: Gathering dependencies
+1722080067.967590 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1083 submit DEBUG: Gathered dependencies
+1722080067.967658 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1098 submit INFO: Task 0 submitted for App train_model, not waiting on any dependency
+1722080067.967721 2024-07-27 19:34:27 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1104 submit DEBUG: Task 0 set to pending state with AppFuture: <AppFuture at 0x7fcff991f490 state=pending>
+1722080067.968297 2024-07-27 19:34:27 MainProcess-1159767 Dependency-Launch_0-140531210499840 parsl.dataflow.memoization:222 check_memo DEBUG: Task 0 will not be memoized
+1722080067.969615 2024-07-27 19:34:27 MainProcess-1159767 Dependency-Launch_0-140531210499840 parsl.dataflow.dflow:776 launch_task INFO: Parsl task 0 try 0 launched on executor threads
+1722080067.969789 2024-07-27 19:34:27 MainProcess-1159767 Dependency-Launch_0-140531210499840 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard out for task 0 will be redirected to train_model.out
+1722080067.969936 2024-07-27 19:34:27 MainProcess-1159767 Dependency-Launch_0-140531210499840 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard error for task 0 will be redirected to train_model.err
+1722080067.970149 2024-07-27 19:34:27 MainProcess-1159767 Dependency-Launch_0-140531210499840 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _launch_if_ready_async on thread Dependency-Launch_0
+1722080072.964638 2024-07-27 19:34:32 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080072.964873 2024-07-27 19:34:32 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080077.965178 2024-07-27 19:34:37 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080077.965453 2024-07-27 19:34:37 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080082.965859 2024-07-27 19:34:42 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080082.966120 2024-07-27 19:34:42 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080087.966512 2024-07-27 19:34:47 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080087.966760 2024-07-27 19:34:47 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080092.967107 2024-07-27 19:34:52 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080092.967334 2024-07-27 19:34:52 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080097.967761 2024-07-27 19:34:57 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080097.968035 2024-07-27 19:34:57 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080102.968476 2024-07-27 19:35:02 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080102.968714 2024-07-27 19:35:02 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080107.969087 2024-07-27 19:35:07 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080107.969327 2024-07-27 19:35:07 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080112.969650 2024-07-27 19:35:12 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080112.969837 2024-07-27 19:35:12 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080117.970250 2024-07-27 19:35:17 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080117.970497 2024-07-27 19:35:17 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080122.970917 2024-07-27 19:35:22 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080122.971191 2024-07-27 19:35:22 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080127.971584 2024-07-27 19:35:27 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080127.971837 2024-07-27 19:35:27 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080132.972277 2024-07-27 19:35:32 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080132.972497 2024-07-27 19:35:32 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080137.972888 2024-07-27 19:35:37 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080137.973130 2024-07-27 19:35:37 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080142.973603 2024-07-27 19:35:42 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080142.973845 2024-07-27 19:35:42 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080147.974219 2024-07-27 19:35:47 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080147.974464 2024-07-27 19:35:47 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080152.974905 2024-07-27 19:35:52 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080152.975181 2024-07-27 19:35:52 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080157.975604 2024-07-27 19:35:57 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080157.975857 2024-07-27 19:35:57 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080162.976233 2024-07-27 19:36:02 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080162.976413 2024-07-27 19:36:02 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080167.976789 2024-07-27 19:36:07 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080167.977022 2024-07-27 19:36:07 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080172.977392 2024-07-27 19:36:12 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080172.977651 2024-07-27 19:36:12 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080177.978081 2024-07-27 19:36:17 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080177.978328 2024-07-27 19:36:17 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080182.978756 2024-07-27 19:36:22 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080182.979009 2024-07-27 19:36:22 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080187.979442 2024-07-27 19:36:27 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080187.979691 2024-07-27 19:36:27 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080192.980109 2024-07-27 19:36:32 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080192.980552 2024-07-27 19:36:32 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080197.980981 2024-07-27 19:36:37 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080197.981224 2024-07-27 19:36:37 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080202.981657 2024-07-27 19:36:42 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080202.981920 2024-07-27 19:36:42 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080207.982249 2024-07-27 19:36:47 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080207.982418 2024-07-27 19:36:47 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080212.982770 2024-07-27 19:36:52 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080212.982990 2024-07-27 19:36:52 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080217.983428 2024-07-27 19:36:57 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080217.983664 2024-07-27 19:36:57 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080222.984065 2024-07-27 19:37:02 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080222.984322 2024-07-27 19:37:02 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080227.984739 2024-07-27 19:37:07 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722080227.984983 2024-07-27 19:37:07 MainProcess-1159767 JobStatusPoller-Timer-Thread-140531222167408-140531218892544 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140531222167408
+1722080230.175644 2024-07-27 19:37:10 MainProcess-1159767 ThreadPoolExecutor-0_0-140531128596224 parsl.dataflow.dflow:597 _complete_task INFO: Task 0 completed (launched -> exec_done)
+1722080230.175948 2024-07-27 19:37:10 MainProcess-1159767 ThreadPoolExecutor-0_0-140531128596224 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard out for task 0 will be redirected to train_model.out
+1722080230.176314 2024-07-27 19:37:10 MainProcess-1159767 ThreadPoolExecutor-0_0-140531128596224 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard error for task 0 will be redirected to train_model.err
+1722080230.176558 2024-07-27 19:37:10 MainProcess-1159767 MainThread-140531281561408 parsl.dataflow.dflow:1206 atexit_cleanup WARNING: Python is exiting with a DFK still running. You should call parsl.dfk().cleanup() before exiting to release any resources
