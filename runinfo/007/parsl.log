@@ -1,0 +1,119 @@
+1722076885.114104 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:98 __init__ INFO: Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    dependency_resolver=None, 
+    executors=(ThreadPoolExecutor(
+        label='threads', 
+        max_threads=2, 
+        storage_access=None, 
+        thread_name_prefix='', 
+        working_dir=None
+    ),), 
+    exit_mode='cleanup', 
+    garbage_collect=True, 
+    initialize_logging=True, 
+    internal_tasks_max_threads=10, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    retries=0, 
+    retry_handler=None, 
+    run_dir='runinfo', 
+    std_autopath=None, 
+    strategy='simple', 
+    strategy_period=5, 
+    usage_tracking=0
+)
+1722076885.114269 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:100 __init__ INFO: Parsl version: 2024.07.22
+1722076885.114370 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.usage_tracking.usage:118 __init__ DEBUG: Tracking level: 0
+1722076885.114473 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:128 __init__ INFO: Run id is: b29a5bc6-9317-4c0c-9033-4c2272f3e317
+1722076885.182577 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:135 __init__ DEBUG: Considering candidate for workflow name: /home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py
+1722076885.182662 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:135 __init__ DEBUG: Considering candidate for workflow name: /home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py
+1722076885.182713 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:135 __init__ DEBUG: Considering candidate for workflow name: /home/ubuntu/data/test/parsl_pro/parsl_script.py
+1722076885.182761 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:141 __init__ DEBUG: Using parsl_script.py as workflow name
+1722076885.182906 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.memoization:163 __init__ INFO: App caching initialized
+1722076885.182972 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.jobs.strategy:145 __init__ DEBUG: Scaling strategy: simple
+1722076885.186062 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1016 submit DEBUG: Task 0 will be sent to executor threads
+1722076885.186167 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:818 _add_output_deps DEBUG: Adding output dependencies
+1722076885.186224 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1067 submit DEBUG: Added output dependencies
+1722076885.186274 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1080 submit DEBUG: Gathering dependencies
+1722076885.186336 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1083 submit DEBUG: Gathered dependencies
+1722076885.186381 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1098 submit INFO: Task 0 submitted for App install_flexflow, not waiting on any dependency
+1722076885.186441 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1104 submit DEBUG: Task 0 set to pending state with AppFuture: <AppFuture at 0x7fb60c71f760 state=pending>
+1722076885.186864 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.memoization:222 check_memo DEBUG: Task 0 will not be memoized
+1722076885.187027 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1016 submit DEBUG: Task 1 will be sent to executor threads
+1722076885.187374 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:818 _add_output_deps DEBUG: Adding output dependencies
+1722076885.188967 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1067 submit DEBUG: Added output dependencies
+1722076885.189075 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1080 submit DEBUG: Gathering dependencies
+1722076885.189174 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:776 launch_task INFO: Parsl task 0 try 0 launched on executor threads
+1722076885.189321 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1083 submit DEBUG: Gathered dependencies
+1722076885.189458 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:1476 log_std_stream INFO: Standard out for task 0 will not be redirected.
+1722076885.189546 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1098 submit INFO: Task 1 submitted for App train_model, not waiting on any dependency
+1722076885.189652 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:1476 log_std_stream INFO: Standard error for task 0 will not be redirected.
+1722076885.189747 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1104 submit DEBUG: Task 1 set to pending state with AppFuture: <AppFuture at 0x7fb60c6a1a30 state=pending>
+1722076885.189867 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _launch_if_ready_async on thread Dependency-Launch_0
+1722076885.190418 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.memoization:222 check_memo DEBUG: Task 1 will not be memoized
+1722076885.191739 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:776 launch_task INFO: Parsl task 1 try 0 launched on executor threads
+1722076885.191878 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard out for task 1 will be redirected to train_model.out
+1722076885.192048 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard error for task 1 will be redirected to train_model.err
+1722076885.192454 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _launch_if_ready_async on thread Dependency-Launch_0
+1722076885.195164 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1016 submit DEBUG: Task 2 will be sent to executor _parsl_internal
+1722076885.195261 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:818 _add_output_deps DEBUG: Adding output dependencies
+1722076885.195319 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1067 submit DEBUG: Added output dependencies
+1722076885.195369 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1080 submit DEBUG: Gathering dependencies
+1722076885.195470 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1083 submit DEBUG: Gathered dependencies
+1722076885.195525 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1098 submit INFO: Task 2 submitted for App deferred_getattr, waiting on task 1
+1722076885.195586 2024-07-27 18:41:25 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1104 submit DEBUG: Task 2 set to pending state with AppFuture: <AppFuture at 0x7fb60c6a1250 state=pending>
+1722076885.195765 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.dataflow.dflow:664 _launch_if_ready_async DEBUG: Task 2 has outstanding dependencies, so launch_if_ready skipping
+1722076885.195926 2024-07-27 18:41:25 MainProcess-1131873 Dependency-Launch_0-140419857991424 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _launch_if_ready_async on thread Dependency-Launch_0
+1722076886.461271 2024-07-27 18:41:26 MainProcess-1131873 ThreadPoolExecutor-0_1-140419841206016 parsl.app.errors:113 reraise DEBUG: Reraising exception of type <class 'parsl.app.errors.BashExitFailure'>
+1722076886.461767 2024-07-27 18:41:26 MainProcess-1131873 ThreadPoolExecutor-0_1-140419841206016 parsl.dataflow.dflow:351 handle_exec_update INFO: Task 1 try 0 failed with exception of type BashExitFailure
+1722076886.461920 2024-07-27 18:41:26 MainProcess-1131873 ThreadPoolExecutor-0_1-140419841206016 parsl.dataflow.dflow:397 handle_exec_update ERROR: Task 1 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py", line 348, in handle_exec_update
+    res = self._unwrap_remote_exception_wrapper(future)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py", line 618, in _unwrap_remote_exception_wrapper
+    result.reraise()
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/app/errors.py", line 117, in reraise
+    raise v
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/app/errors.py", line 141, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/app/bash.py", line 94, in remote_side_bash_executor
+    raise pe.BashExitFailure(func_name, proc.returncode)
+parsl.app.errors.BashExitFailure: bash_app train_model failed with unix exit code 134
+1722076886.462879 2024-07-27 18:41:26 MainProcess-1131873 ThreadPoolExecutor-0_1-140419841206016 concurrent.futures:332 _invoke_callbacks ERROR: exception calling callback for <AppFuture at 0x7fb60c6a1a30 state=finished raised BashExitFailure>
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py", line 348, in handle_exec_update
+    res = self._unwrap_remote_exception_wrapper(future)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py", line 618, in _unwrap_remote_exception_wrapper
+    result.reraise()
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/app/errors.py", line 117, in reraise
+    raise v
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/app/errors.py", line 141, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/app/bash.py", line 94, in remote_side_bash_executor
+    raise pe.BashExitFailure(func_name, proc.returncode)
+parsl.app.errors.BashExitFailure: bash_app train_model failed with unix exit code 134
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py", line 1123, in callback_adapter
+    self.launch_if_ready(task_record)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/site-packages/parsl/dataflow/dflow.py", line 646, in launch_if_ready
+    self.dependency_launch_pool.submit(self._launch_if_ready_async, task_record)
+  File "/home/ubuntu/miniconda3/envs/parsl/lib/python3.9/concurrent/futures/thread.py", line 167, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown
+1722076886.463932 2024-07-27 18:41:26 MainProcess-1131873 ThreadPoolExecutor-0_1-140419841206016 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard out for task 1 will be redirected to train_model.out
+1722076886.464058 2024-07-27 18:41:26 MainProcess-1131873 ThreadPoolExecutor-0_1-140419841206016 parsl.dataflow.dflow:1478 log_std_stream INFO: Standard error for task 1 will be redirected to train_model.err
+1722076890.183518 2024-07-27 18:41:30 MainProcess-1131873 JobStatusPoller-Timer-Thread-140419866844752-140419866384128 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1722076890.183735 2024-07-27 18:41:30 MainProcess-1131873 JobStatusPoller-Timer-Thread-140419866844752-140419866384128 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-140419866844752
+1722076892.605467 2024-07-27 18:41:32 MainProcess-1131873 ThreadPoolExecutor-0_0-140419849598720 parsl.dataflow.dflow:597 _complete_task INFO: Task 0 completed (launched -> exec_done)
+1722076892.605718 2024-07-27 18:41:32 MainProcess-1131873 ThreadPoolExecutor-0_0-140419849598720 parsl.dataflow.dflow:1476 log_std_stream INFO: Standard out for task 0 will not be redirected.
+1722076892.605811 2024-07-27 18:41:32 MainProcess-1131873 ThreadPoolExecutor-0_0-140419849598720 parsl.dataflow.dflow:1476 log_std_stream INFO: Standard error for task 0 will not be redirected.
+1722076892.606082 2024-07-27 18:41:32 MainProcess-1131873 MainThread-140419929044800 parsl.dataflow.dflow:1206 atexit_cleanup WARNING: Python is exiting with a DFK still running. You should call parsl.dfk().cleanup() before exiting to release any resources

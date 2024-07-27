@@ -1,0 +1,8 @@
+--> executable follows <--
+
+    cd $FF_HOME/FlexFlow/build
+    make install
+    
+--> end executable <--
+DEPRECATION: --build-option and --global-option are deprecated. pip 24.2 will enforce this behaviour change. A possible replacement is to use --config-settings. Discussion can be found at https://github.com/pypa/pip/issues/11859
+WARNING: Implying --no-binary=:all: due to the presence of --build-option / --global-option. 
